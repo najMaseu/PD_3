@@ -5,7 +5,7 @@ let secGen = secondsGen(date.getSeconds(), 1)
 let minGen = minutesGen(date.getMinutes(), 1)
 let hrGen = hoursGen(date.getHours(), 1)
 //deklaracja zmiennych przechowujce bieżca minutę i godzinę
-let currMin
+let currMin = minGen.next().value
 let currHr = hrGen.next().value
 //warunki if zapobiegajace wyświetlaniu sie pojedunczych cyfr
 if(date.getMinutes() < 10){
